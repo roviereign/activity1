@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+.tablink {
+  background-color: #e41576;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+.tablink:hover {
+  background-color: #ad0a0a;
+}
+.tabcontent {
+  color: rgb(255, 255, 255);
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+.wel{
+  font-size: xx-large ;
+  text-align:center;
+  color:black
+}
+#me{
+  border-radius: 100%;
+  width:250px;
+  height: 250px;
+  position:absolute;
+  left:40%;
+}
+#mine{
+  border-radius: 100%;
+  width:250px;
+  height: 250px;
+  position:absolute;
+  left:20%;}
+  #wed{
+  border-radius: 100%;
+  width:250px;
+  height: 250px;
+  position:absolute;
+  left:60%;}
+.me{
+  position: absolute;
+  top:70%;
+  left:40%;
+}
+#box {
+  border-width: 0.25em;
+        border-style: solid;
+        border-color: rgb(225, 65, 145);
+        width: 50em;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2em;
+}
+.a{position: absolute;
+  top:27%;
+  left:30%;
+}
+.b{position: absolute;
+  top:45%;
+  left:40%;
+}
+.c{position: absolute;
+  top:62%;
+  left:50%;
+}
+.column {
+  float: left;
+  width: 25%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.content {
+  background-color: white;
+  padding: 10px;
+}
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;}
+  }
+
+#Home {background-image:url("background1.png"); background-repeat: no-repeat; background-size: 100% 100%; background-attachment: fixed}
+#Personal_Details {background-image:url("back 3.png"); background-repeat: no-repeat; background-size:cover; height:fit-content; background-attachment: fixed}
+#Contacts {background-image:url("3.png");  background-repeat: no-repeat; background-size: 100% 100%; background-attachment: fixed}
+#Photos {background-image:url("2.png"); background-repeat: no-repeat; background-size: cover; height: fit-content; background-attachment: fixed }
+</style>
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('Home', this, 'purple')" id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage('Personal_Details', this, 'red')">Personal Details</button>
+<button class="tablink" onclick="openPage('Contacts', this, 'aqua')">Contacts</button>
+<button class="tablink" onclick="openPage('Photos', this, 'yellow')">Photos</button>
+
+<div id="Personal_Details" class="tabcontent">
+  <h3 style="font-size: xx-large;font-family: cursive;color: rgb(136, 16, 36);text-align: center;"><mark>"Let's get to know more about me."</mark></h3>
+  <div id="box">
+  <p style="font-family: cursive;font-size: large;color: blue">
+    
+      <b>PERSONAL INFORMATION</b><br> <br>
+      Name: Rovie G. Sacayan-Basa<br>
+      Birthday: September 23, 1993<br>
+      Age: 29 years old<br>
+      Address: Cabano, San Lorenzo, Guimaras <br>
+      Civil Status: Married<br><br><br>
+      <b>EDUCATIONAL BACKGROUND</b><br> <br>
+      Elementary: Doña Lucia C. Locsin Memorial School<br>
+      High School: East Valencia National High School<br>
+      College: STI College of Iloilo and Guimaras State University<br><br><br>
+      <b>ACHIEVEMENTS</b><br> <br>
+      => Graduated in Elementary and High School with Honors.<br>
+      => Got my leadership award in College.<br>
+      => My biggest achievement in life is that, I was able to be a part of my younger sister's success, by helping her finish her college.<br><br><br>
+      <b>WORK EXPERIENCE</b> <br><br>
+      1. Worked as Customer Service Representative in Transcom for 11 months.<br>
+      2. Been a Contractual Clerk in LGU-San Lorenzo for more than 2 years.<br>
+      3. Sales Representative and got promoted as Technical Support II after 1 year in Convergys for more than 3 years.<br>
+      4. During pandemic Working-From-Home was a trend, so been there for 1 year.<br>
+      5. Finally, was a working student during my first year in Teletech for 16 months.
+  </p>
+</div>
+</div>
+
+<div id="Home" class="tabcontent">
+  <h3 class="wel">Welcome to my E-Portfolio!</h3>
+  <img src= "me.jpg"  id="me"><img src="mine.jpg" id="mine"> <img src="wed.jpg" id="wed">
+  <p style="text-align: center; font-family: cursive; font-size: xx-large; color: green" class="me"><b>Hope you enjoy. :) </b></p> 
+</div>
+
+<div id="Contacts" class="tabcontent">
+  
+    <h3 style="text-align:center; font-size: xx-large;font-family: algerian; color:blue">My Contact Details</h3>
+      <p class="a"> <a href="https://www.facebook.com/rovie.sacayan"><img src="fb1.jpg" alt="Facebook.com" width="100" height="70">Rovie Sacayan-Basa<br>
+      </a> </p>
+      <p class="b"> <a href="https://www.google.com"><img src="gm1.jpg" alt="Google.com" width="100" height="70">rovie.sacayan@gsc.edu.ph<br></a></p>
+      <p style="font-family: impact; color:black" class="c"><img src="phone.jpg" height="100" width="50">09653470257</p> 
+    
+</div>
+
+<div id="Photos" class="tabcontent">
+  <h3 style="font-size: xx-large;text-align: center;font-family: century-gothic;color:yellowgreen">Compilation of my Photos</h3>
+  <div class="row">
+    <div class="column">
+      <div class="content">
+        <img src="JPS01699.jpg" alt="Wedding" style="width:100%">
+        <p style="font-size: larger ;font-family: comic-sans-ms; font-weight: bold; text-align: center; color:#ad0a0a">This is the day I said "I do".</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+      <img src="Kaira.jpg" alt="Kai" style="width:100%">
+        <p style="font-family: cambria; font-size: larger; font-weight: bold; text-align: center;color:#e41576">My mini me is enjoying her grapes.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+      <img src="horse.jpg" alt="Horse" style="width:100%">
+        <p style="font-family: bell-mt; font-size: larger ;font-weight: bold;text-align: center;color:blue">Riding a horse is just as fun as it could be with my little adventurer. :)</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+      <img src="fam.jpg" alt="Family" style="width:100%">
+        <p style="font-family: broadway; text-align: center; color:crimson">"<b>FAMILY</b> is not an important thing. It's <b>EVERYTHING.</b>"</p>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <img src="cover.jpg" alt="Cover" style="width:100%">
+    <p style="text-align: center; color: darkorange;font-family: elephant;">"<b>MARRIAGE</b> lets you annoy one Special Person for the rest of your life."</p>
+  </div>
+  </div>
+</div>
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>
